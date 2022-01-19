@@ -1,0 +1,21 @@
+Procedure  tri_selection (Var arr:tableau, n:entier)
+	variables
+	temp,min ,i :entier
+Debut
+	pour i de 1 a n-1 faire
+		min<-- i
+			pour j de i+1 a n faire 
+				si arr[j] <arr[min] 
+					min <-- j
+				fin si 
+			fin pour 
+
+
+				si (min <> i)
+					temp <-- arr[i]
+					arr[i] <-- arr[min]
+					arr[min] <-- temp
+				finsi
+
+	fin pour
+Fin
